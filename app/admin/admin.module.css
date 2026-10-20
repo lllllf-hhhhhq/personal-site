@@ -1,0 +1,288 @@
+/* ---------- 登录关口 ---------- */
+.gate {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding: var(--s6) clamp(1.25rem, 5vw, 2.5rem);
+}
+
+.gateText {
+  color: var(--ink-3);
+  font-size: var(--t-small);
+}
+
+.gateCard {
+  width: 100%;
+  max-width: 26rem;
+  padding: var(--s6);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+}
+
+.gateEyebrow {
+  color: var(--accent);
+}
+
+.gateTitle {
+  margin-block: var(--s2) var(--s3);
+  font-size: 1.45rem;
+}
+
+.gateLead {
+  color: var(--ink-3);
+  font-size: var(--t-small);
+  line-height: 1.75;
+}
+
+.gateForm {
+  display: grid;
+  gap: var(--s4);
+  margin-top: var(--s5);
+}
+
+.gateForm button {
+  justify-content: center;
+}
+
+.gateError {
+  color: var(--danger);
+  font-size: var(--t-small);
+  line-height: 1.7;
+}
+
+.gateBack {
+  margin-top: var(--s5);
+  font-size: var(--t-small);
+}
+
+/* ---------- 外壳 ---------- */
+.shell {
+  min-height: 100dvh;
+  padding-bottom: 6.5rem;
+}
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.barInner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3) var(--s5);
+  min-height: 3.75rem;
+  padding-block: var(--s2);
+}
+
+.barLeft {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s3);
+}
+
+.barEyebrow {
+  color: var(--accent);
+}
+
+.barTitle {
+  font-size: 1.0625rem;
+}
+
+.barRight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+
+.main {
+  display: grid;
+  gap: var(--s5);
+  padding-top: var(--s6);
+}
+
+/* ---------- 分区切换 ---------- */
+.tabs {
+  display: inline-flex;
+  gap: var(--s1);
+  padding: var(--s1);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--paper-2);
+}
+
+.tab {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--ink-3);
+  font-size: var(--t-small);
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--ink);
+}
+
+.tab[aria-pressed="true"] {
+  border-color: var(--line-2);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ---------- 面板 ---------- */
+.panel {
+  display: grid;
+  gap: var(--s5);
+}
+
+.panelHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3) var(--s5);
+  padding-bottom: var(--s4);
+  border-bottom: 1px solid var(--line);
+}
+
+.panelLead {
+  max-width: 46em;
+  color: var(--ink-3);
+  font-size: var(--t-small);
+  line-height: 1.75;
+}
+
+.empty {
+  color: var(--ink-3);
+  font-size: var(--t-small);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--s4) var(--s5);
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: var(--s4) var(--s5);
+}
+
+.fieldWrap {
+  display: block;
+  min-width: 0;
+}
+
+.hint {
+  display: block;
+  margin-top: var(--s2);
+  color: var(--ink-3);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+/* ---------- 条目 ---------- */
+.rows {
+  display: grid;
+  gap: var(--s4);
+}
+
+.rowCard {
+  display: grid;
+  gap: var(--s4);
+  padding: var(--s5);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+}
+
+.rowHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s4);
+}
+
+.rowIndex {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  color: var(--ink-2);
+  font-size: var(--t-small);
+  cursor: pointer;
+}
+
+.checkbox input {
+  margin-top: 0.35rem;
+  accent-color: var(--accent);
+}
+
+.checkboxHint {
+  display: block;
+  color: var(--ink-3);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+/* ---------- 底部操作栏 ---------- */
+.actionBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.actionInner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3) var(--s5);
+  padding-block: var(--s3);
+}
+
+.actionMessage {
+  min-width: 0;
+  flex: 1 1 20rem;
+}
+
+.messageOk,
+.messageError,
+.messageIdle {
+  font-size: var(--t-small);
+  line-height: 1.7;
+}
+
+.messageOk {
+  color: var(--ok);
+}
+
+.messageError {
+  color: var(--danger);
+}
+
+.messageIdle {
+  color: var(--ink-3);
+}
+
+.actionButtons {
+  display: flex;
+  gap: var(--s2);
+}
