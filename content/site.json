@@ -17,42 +17,50 @@
     {
       "name": "Three.js / WebGL",
       "category": "3D 与图形",
-      "note": "浏览器端 3D 场景搭建与相机交互"
+      "note": "浏览器端 3D 场景搭建与相机交互",
+      "draft": false
     },
     {
       "name": "Rapier 物理引擎",
       "category": "3D 与图形",
-      "note": "WASM 刚体堆叠，处理接触求解带来的漂移与抖动"
+      "note": "WASM 刚体堆叠，处理接触求解带来的漂移与抖动",
+      "draft": false
     },
     {
       "name": "静态站点构建",
       "category": "Web 前端",
-      "note": "单文件交付与多页站点两种形态都做过"
+      "note": "单文件交付与多页站点两种形态都做过",
+      "draft": false
     },
     {
       "name": "交互与可视化",
       "category": "Web 前端",
-      "note": "星图拖动旋转、落点预判、路线成本演示"
+      "note": "星图拖动旋转、落点预判、路线成本演示",
+      "draft": false
     },
     {
       "name": "无障碍与可读性",
       "category": "Web 前端",
-      "note": "关键图形提供等价的文本描述，不依赖视觉才能获取信息"
+      "note": "关键图形提供等价的文本描述，不依赖视觉才能获取信息",
+      "draft": false
     },
     {
       "name": "GitHub Actions",
       "category": "工程与交付",
-      "note": "自动化构建与 Pages 部署"
+      "note": "自动化构建与 Pages 部署",
+      "draft": false
     },
     {
       "name": "技术写作",
       "category": "工程与交付",
-      "note": "用 README 记录技术决策、实测数据与未解决的缺陷"
+      "note": "用 README 记录技术决策、实测数据与未解决的缺陷",
+      "draft": false
     },
     {
       "name": "公开数据溯源",
       "category": "工程与交付",
-      "note": "引用星表与港口统计时标注到原始来源（VizieR / SIMBAD、Eurostat）"
+      "note": "引用星表与港口统计时标注到原始来源（VizieR / SIMBAD、Eurostat）",
+      "draft": false
     }
   ],
   "projects": [
@@ -66,7 +74,12 @@
         "每段行程都带成本与时间窗；司机端每趟只拿一份导出，含准入说明与单据清单",
         "引用跨越边境比例、鹿特丹港吞吐量等公开统计，并标注到 Eurostat 与港务局原始来源"
       ],
-      "tags": ["静态站点", "路线调度演示", "数据可视化", "公开数据引用"],
+      "tags": [
+        "静态站点",
+        "路线调度演示",
+        "数据可视化",
+        "公开数据引用"
+      ],
       "link": "https://linehaul-461.netlify.app",
       "repo": "",
       "draft": false
@@ -81,7 +94,12 @@
         "提供与星图等价的文本描述，图形不可用时信息仍可完整获取",
         "中英双语；星位来源标注至 Yale Bright Star Catalog（经 SIMBAD），源码以 AGPL-3.0 开放"
       ],
-      "tags": ["静态多页站点", "中英双语", "互动星图", "无障碍"],
+      "tags": [
+        "静态多页站点",
+        "中英双语",
+        "互动星图",
+        "无障碍"
+      ],
       "link": "https://meridian-696.netlify.app",
       "repo": "https://github.com/lllllf-hhhhhq/meridian-observatory",
       "draft": false
@@ -96,7 +114,13 @@
         "入睡判据由速度改为位姿变化：0.3 秒内位移小于 3 cm 且转角小于 1.4° 才冻结刚体，解决接触点求解导致的整塔缓漂与高频抖动",
         "落点预判按稳定度着色；松手瞬间鼠标的横向速度会传给砖，塔越高越经不起这一抖"
       ],
-      "tags": ["Three.js", "WebGL", "Rapier 物理引擎", "单文件交付", "GitHub Actions"],
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "Rapier 物理引擎",
+        "单文件交付",
+        "GitHub Actions"
+      ],
       "link": "https://lllllf-hhhhhq.github.io/ta-tower/",
       "repo": "https://github.com/lllllf-hhhhhq/ta-tower",
       "draft": false
@@ -111,9 +135,14 @@
         "后台：口令鉴权 + HMAC 签名会话 Cookie + 表单化编辑，写库前做服务端全量校验",
         "内容统一存放于仓库中的 JSON，每次保存产生一条可追溯的提交"
       ],
-      "tags": ["Next.js", "TypeScript", "GitHub API", "内容后台"],
-      "link": "",
-      "repo": "",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "GitHub API",
+        "内容后台"
+      ],
+      "link": "https://personal-site-six-omega-70.vercel.app",
+      "repo": "https://github.com/lllllf-hhhhhq/personal-site",
       "draft": false
     }
   ],
