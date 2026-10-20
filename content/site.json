@@ -2,64 +2,119 @@
   "profile": {
     "name": "王略帆",
     "nameEn": "Wang Luefan",
-    "headline": "大连海事大学软件工程本科生 · 关注 Web 工程与计算机系统基础",
+    "headline": "大连海事大学软件工程本科生 · Web 前端 · 3D 交互与可视化",
     "school": "大连海事大学",
     "schoolEn": "Dalian Maritime University",
     "major": "软件工程",
     "grade": "2023级",
     "studentIdMasked": "222023****",
     "location": "辽宁 · 大连",
-    "email": "wangluefan@example.com",
-    "github": "https://github.com/wangluefan",
-    "bio": "大连海事大学软件工程专业 2023 级本科生。学习重心在 Web 开发、数据结构与算法、数据库与软件工程方法。习惯把学到的东西做成能跑起来的东西，并把过程与取舍记录清楚。"
+    "email": "321482475@qq.com",
+    "github": "https://github.com/lllllf-hhhhhq",
+    "bio": "大连海事大学软件工程专业 2023 级本科生。动手方向集中在 Web 前端与浏览器 3D：做过公路货运多站调度的演示站、天文制图学会的展览站点，以及一个用 Three.js 与物理引擎写的 3D 堆塔游戏。习惯把技术选择、踩到的坑和数据来源一并写清楚。"
   },
   "skills": [
-    { "name": "C / C++", "category": "编程语言", "note": "课程实验与算法练习", "draft": true },
-    { "name": "Java", "category": "编程语言", "note": "面向对象程序设计课程", "draft": true },
-    { "name": "Python", "category": "编程语言", "note": "脚本自动化与数据处理", "draft": true },
-    { "name": "HTML / CSS / JavaScript", "category": "Web 开发", "note": "静态页面与交互实现", "draft": true },
-    { "name": "React / Next.js", "category": "Web 开发", "note": "本作品集网站的技术栈", "draft": true },
-    { "name": "MySQL", "category": "数据与存储", "note": "数据库原理课程实验", "draft": true },
-    { "name": "Git / GitHub", "category": "工程能力", "note": "版本管理与协作流程", "draft": true },
-    { "name": "数据结构与算法", "category": "工程能力", "note": "课程学习与刷题实践", "draft": true }
+    {
+      "name": "Three.js / WebGL",
+      "category": "3D 与图形",
+      "note": "浏览器端 3D 场景搭建与相机交互"
+    },
+    {
+      "name": "Rapier 物理引擎",
+      "category": "3D 与图形",
+      "note": "WASM 刚体堆叠，处理接触求解带来的漂移与抖动"
+    },
+    {
+      "name": "静态站点构建",
+      "category": "Web 前端",
+      "note": "单文件交付与多页站点两种形态都做过"
+    },
+    {
+      "name": "交互与可视化",
+      "category": "Web 前端",
+      "note": "星图拖动旋转、落点预判、路线成本演示"
+    },
+    {
+      "name": "无障碍与可读性",
+      "category": "Web 前端",
+      "note": "关键图形提供等价的文本描述，不依赖视觉才能获取信息"
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "工程与交付",
+      "note": "自动化构建与 Pages 部署"
+    },
+    {
+      "name": "技术写作",
+      "category": "工程与交付",
+      "note": "用 README 记录技术决策、实测数据与未解决的缺陷"
+    },
+    {
+      "name": "公开数据溯源",
+      "category": "工程与交付",
+      "note": "引用星表与港口统计时标注到原始来源（VizieR / SIMBAD、Eurostat）"
+    }
   ],
   "projects": [
     {
-      "title": "个人作品集网站",
-      "period": "2026",
+      "title": "Linehaul · 货运多站路线调度演示站",
+      "period": "",
       "role": "独立开发",
-      "summary": "面向升学与求职展示的个人站点。前台以服务端渲染呈现个人信息、技能与项目经历；后台可在浏览器中直接编辑内容，内容变更会写回代码仓库并触发部署平台自动重新构建，无需手动改代码。",
+      "summary": "面向公路货运的调度演示站：把订单、闸口时间窗与车辆信息汇入同一处，生成带时间窗和准入说明的司机执行序列，并把燃油、过路、轮渡与司机工时成本按航段挂到计划上。",
       "highlights": [
-        "Next.js 16 App Router + TypeScript，前台为无 JavaScript 依赖的静态渲染结果",
-        "自建后台：口令鉴权、HMAC 签名会话 Cookie、表单化内容编辑与校验",
-        "通过 GitHub Contents API 将内容提交回仓库，实现「改内容即重新部署」的闭环"
+        "以最近邻法生成首轮巡回，再用 2-opt 消交叉，减少空驶与司机工时",
+        "每段行程都带成本与时间窗；司机端每趟只拿一份导出，含准入说明与单据清单",
+        "引用跨越边境比例、鹿特丹港吞吐量等公开统计，并标注到 Eurostat 与港务局原始来源"
       ],
-      "tags": ["Next.js", "TypeScript", "GitHub API", "Vercel"],
-      "link": "",
+      "tags": ["静态站点", "路线调度演示", "数据可视化", "公开数据引用"],
+      "link": "https://linehaul-461.netlify.app",
       "repo": "",
       "draft": false
     },
     {
-      "title": "占位项目 1 · 待替换",
-      "period": "2025",
-      "role": "待填写",
-      "summary": "此条目为占位内容，用于展示项目列表的排版结构。请在后台「项目」标签页中替换为你的真实项目：做了什么、用到什么技术、结果如何。",
-      "highlights": ["说明项目要解决的问题", "说明你负责的部分与技术选型", "说明最终结果或可验证的产出"],
-      "tags": ["待替换"],
-      "link": "",
-      "repo": "",
-      "draft": true
+      "title": "Meridian · 天文制图学会展览站点",
+      "period": "",
+      "role": "独立开发",
+      "summary": "虚构的天文制图与仪器制造学会的秋季展站点：多页结构呈现铜版图、仪器、节目与参观信息，主视觉是一张可按月切换、可拖动旋转的星图。",
+      "highlights": [
+        "星位按 J2000 赤经赤纬绘制 20 颗命名恒星，星座以连星线绘制而非现代边界，微弱星点用于铺陈底纹",
+        "提供与星图等价的文本描述，图形不可用时信息仍可完整获取",
+        "中英双语；星位来源标注至 Yale Bright Star Catalog（经 SIMBAD），源码以 AGPL-3.0 开放"
+      ],
+      "tags": ["静态多页站点", "中英双语", "互动星图", "无障碍"],
+      "link": "https://meridian-696.netlify.app",
+      "repo": "https://github.com/lllllf-hhhhhq/meridian-observatory",
+      "draft": false
     },
     {
-      "title": "占位项目 2 · 待替换",
-      "period": "2024",
-      "role": "待填写",
-      "summary": "此条目为占位内容。真实项目条目建议控制在 3 到 5 个，宁可少而讲清楚，也不要多而空洞。",
-      "highlights": ["说明项目要解决的问题", "说明你负责的部分与技术选型", "说明最终结果或可验证的产出"],
-      "tags": ["待替换"],
+      "title": "塔 · 3D 堆塔小游戏",
+      "period": "",
+      "role": "独立开发",
+      "summary": "浏览器里的 3D 堆塔游戏：先靠手感把砖垒高，再按空格一巴掌推倒，建设与毁灭在同一个场景里闭环。单文件交付，打开就能玩，无需服务器。",
+      "highlights": [
+        "Three.js r160 + Rapier 0.14（WASM），24 块砖可堆到 8.6 米，整塔倾斜仅 0.8°",
+        "入睡判据由速度改为位姿变化：0.3 秒内位移小于 3 cm 且转角小于 1.4° 才冻结刚体，解决接触点求解导致的整塔缓漂与高频抖动",
+        "落点预判按稳定度着色；松手瞬间鼠标的横向速度会传给砖，塔越高越经不起这一抖"
+      ],
+      "tags": ["Three.js", "WebGL", "Rapier 物理引擎", "单文件交付", "GitHub Actions"],
+      "link": "https://lllllf-hhhhhq.github.io/ta-tower/",
+      "repo": "https://github.com/lllllf-hhhhhq/ta-tower",
+      "draft": false
+    },
+    {
+      "title": "本站 · 个人作品集与内容后台",
+      "period": "",
+      "role": "独立开发",
+      "summary": "你正在看的这个站点。前台以服务端渲染呈现个人信息、项目与技能；后台可在线编辑全部内容，保存后经 GitHub Contents API 提交回仓库，由部署平台自动重新构建，全程不需要改代码。",
+      "highlights": [
+        "Next.js 16 App Router + TypeScript，前台为静态渲染产物，页面不依赖客户端脚本",
+        "后台：口令鉴权 + HMAC 签名会话 Cookie + 表单化编辑，写库前做服务端全量校验",
+        "内容统一存放于仓库中的 JSON，每次保存产生一条可追溯的提交"
+      ],
+      "tags": ["Next.js", "TypeScript", "GitHub API", "内容后台"],
       "link": "",
       "repo": "",
-      "draft": true
+      "draft": false
     }
   ],
   "meta": {
